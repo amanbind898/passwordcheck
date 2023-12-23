@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check+</title>
+    <link rel="stylesheet" href="style.css">
+   <!-- for modal dialogue box -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <div class="logo">
+            <h1>PasswordCheck</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Secure Your World with <span class="accent-text">PasswordCheck</span></h1>
+            <p class="hero-subtext">Your first line of defense against cyber threats</p>
+            <p class="hero-description">
+                Unleash the power of smart password analysis with PasswordCheck. Our advanced tools ensure your online security is at its strongest.
+            </p>
+         
+            <!-- modal dialogue boxes -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+            
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Explore Features</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+            
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>Your website features a JavaScript-based password strength checker with the following functionalities:</p>
+                            
+                            <ul>
+                                <li>Real-time password strength evaluation</li>
+                                <li>Color-coded indicators for weak, moderate, and strong passwords</li>
+                                <li>Interactive visual feedback with ticks and crosses</li>
+                                <li>Detailed information on password requirements</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#features" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Explore Features</a>
+                <a href="#get-started" class="btn btn-secondary" data-toggle="modal" data-target="#getStartedModal">Get Started</a>
+            </div>
+            
+            <div class="modal" id="getStartedModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+            
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Get Started</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+            
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p>Get started with creating strong and secure passwords using the following tips:</p>
+                            
+                            <ul>
+                                <li>Include a mix of uppercase and lowercase letters</li>
+                                <li>Use numbers and special characters</li>
+                                <li>Avoid using easily guessable information (e.g., your name, birthdate)</li>
+                                <li>Make your password at least 8 characters long</li>
+                                <li>Regularly update your passwords</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- end -->
+        </div>
+    </section>
+     <section id="content" class="content" >
+        <div class="inputbox smallbox">
+            <h1>Password Analyser</h1>
+            <p>Enter your password to check its strength</p>
+            <input type="text" id="password" placeholder="Enter your password">
+           
+            <div class="strengthmeter">
+                <div class="strength" id="strength">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            
+            <div class="result">
+                <p id="result"></p>
+                <div id="length-indicator" class="indicator">Length</div>
+                <div id="case-indicator" class="indicator">Uppercase & Lowercase</div>
+                <div id="number-indicator" class="indicator">Number</div>
+                <div id="special-char-indicator" class="indicator">Special Character</div>
+            </div>
+            
+            
+        </div>
+     </section>
+       
+
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
